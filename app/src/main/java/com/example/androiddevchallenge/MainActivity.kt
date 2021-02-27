@@ -26,6 +26,9 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.core.content.ContextCompat
+import androidx.core.content.ContextCompat.startActivity
+import com.example.androiddevchallenge.data.model.Puppy
 import com.example.androiddevchallenge.ui.theme.MyTheme
 
 class MainActivity : AppCompatActivity() {
@@ -33,17 +36,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             MyTheme {
-                MyApp()
+                MyApp {
+                    startActivity(ProfileActivity.newIntent(this, it))
+                }
             }
         }
     }
 }
 
 @Composable
-fun MyApp() {
+fun MyApp(navigateToProfile: (Puppy) -> Unit) {
     Scaffold(
         content = {
-            BarkHomeContent()
+            BarkHomeContent(navigateToProfile = navigateToProfile)
         }
     )
 }
@@ -52,7 +57,7 @@ fun MyApp() {
 @Composable
 fun LightPreview() {
     MyTheme {
-        MyApp()
+        MyApp { }
     }
 }
 
@@ -60,6 +65,6 @@ fun LightPreview() {
 @Composable
 fun DarkPreview() {
     MyTheme(darkTheme = true) {
-        MyApp()
+        MyApp { }
     }
 }

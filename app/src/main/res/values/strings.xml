@@ -10,4 +10,11 @@
       the License.
       -->
     <string name="app_name">AndroidDevChallenge</string>
+    <string name="back">Back</string>
+    <string name="more_options">More</string>
+    <string name="name">Name</string>
+    <string name="personality">Personality</string>
+    <string name="adopt_me">Adopt Me</string>
+    <string name="sex">Sex</string>
+    <string name="age">Age</string>
 </resources>

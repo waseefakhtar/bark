@@ -1,5 +1,6 @@
 package com.example.androiddevchallenge
 
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -10,7 +11,7 @@ import com.example.androiddevchallenge.data.DataProvider
 import com.example.androiddevchallenge.data.model.Puppy
 
 @Composable
-fun BarkHomeContent() {
+fun BarkHomeContent(navigateToProfile: (Puppy) -> Unit) {
     val puppies = remember { DataProvider.puppyList }
     LazyColumn(
         contentPadding = PaddingValues(horizontal = 16.dp, vertical = 8.dp)
@@ -18,7 +19,7 @@ fun BarkHomeContent() {
         items(
             items = puppies,
             itemContent = {
-                PuppyListItem(puppy = it)
+                PuppyListItem(puppy = it, navigateToProfile)
             })
     }
 }

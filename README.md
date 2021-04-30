@@ -2,6 +2,9 @@
 
 Template repository for the Jetpack Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge).
 
+## Tutorial
+Part I: https://www.waseefakhtar.com/android/recyclerview-in-jetpack-compose/
+
 ## Screenshots
 
 <img src="https://github.com/waseefakhtar/bark/blob/main/screenshots/device-2021-02-27-190633.png?raw=true" width="200"/> <img src="https://github.com/waseefakhtar/bark/blob/main/screenshots/device-2021-02-27-190647.png?raw=true" width="200"/>

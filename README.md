@@ -3,7 +3,7 @@
 Template repository for the Jetpack Compose [#AndroidDevChallenge](https://developer.android.com/dev-challenge).
 
 ## Tutorial
-Part I: https://www.waseefakhtar.com/android/recyclerview-in-jetpack-compose/
+Part I: https://www.waseefakhtar.com/android/recyclerview-in-jetpack-compose/ </br>
 Part II: https://www.waseefakhtar.com/android/jetpack-compose-styles-and-themes/
 
 ## Screenshots
